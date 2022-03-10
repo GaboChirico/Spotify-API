@@ -77,12 +77,13 @@ def crearCSV(dataframe):
 
 if __name__ == '__main__':
 
-    los_nafta = 'spotify:artist:1yJIRYs4jmlSYNQkWnhWPe'
+    # los_nafta = 'spotify:artist:1yJIRYs4jmlSYNQkWnhWPe'
     nsg = '0ZgTSm1VI55AhE09Nzvv11'
-    playlist = '37i9dQZF1DXagUeYbNSnOA'
+    # playlist = '37i9dQZF1DXagUeYbNSnOA'
+    #
+    # id_canciones = getTracksIdAlbum(nsg)
+    # lista_canciones = listaTracks(id_canciones)
+    print(sp.album(nsg)['images'][0]['url'])
 
-    id_canciones = getTracksIdPlaylist(playlist)
-    lista_canciones = listaTracks(id_canciones)
-
-    df = pd.DataFrame(lista_canciones, columns=meta+features)
-    crearCSV(df)
+    # df = pd.DataFrame(lista_canciones, columns=meta+features)
+    # crearCSV(df)
